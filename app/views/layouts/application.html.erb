@@ -9,6 +9,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="my-nav">
+      <div class="container">
+        <div class="navbar-title"><%= link_to "Kalamity Records", root_path %></div>
+        <div class="navbar-flash"><%= flash[:alert] %></div>
+        <div class="navbar-flash"><%= flash[:notice] %></div>
+        <div class="navbar-item"><%= link_to "Login", new_user_session_path  if !current_user %></div>
+        <div class="navbar-item"><%= link_to "Sign Up", new_user_registration_path if !current_user %></div>
+        <div class="navbar-user"><%= ("Welcome " + current_user.username + "!") if current_user %></div>
+        <div class="navbar-avatar"><%= image_tag(current_user.avatar.url(:thumb)) if current_user %></div>
+        <div class="navbar-item"><%= link_to "Log Out", destroy_user_session_path, method: :delete if current_user %></div>
+        <div class="navbar-item"><%= link_to "Settings", edit_user_registration_path if current_user %></div>
+
+      </div>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
