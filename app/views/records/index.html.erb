@@ -1,0 +1,9 @@
+<div class="records">
+  <% @records.each do |record| %>
+    <div class="record">
+      <h4><%= record.title %> <small>$<%= record.price %>.00</small></h4>
+      <h5><%= record.artist %></h5>
+      <em><h6>Genre: <%= record.genre %></h6></em>
+    </div>
+  <% end %>
+</div>
