@@ -1,0 +1,19 @@
+<%= render "layouts/errors", :object => @review %>
+
+<%= form_for [@record, @review] do |f| %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  <%= f.label :content %><br>
+  <%= f.text_area :content %><br><br>
+  <%= f.label :rating %><br>
+  <%= f.select :rating, options_for_select([
+    ["1", 1],
+    ["2", 2],
+    ["3", 3],
+    ["4", 4],
+    ["5", 5]
+    ]), {}, {class: "form-control"} %>
+    <br>
+    <br>
+    <%= f.submit class: "new"  %>
+    <%= link_to "Back to Record", record_path(@record), class: "go-back" %>
+<% end %>
