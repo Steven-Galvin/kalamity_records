@@ -1,3 +1,7 @@
+<%= link_to "Edit Record", edit_record_path(@record) if current_user && current_user.admin === true %>
+<%= link_to "Delete Record", record_path(@record),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} if current_user && current_user.admin === true%>
 <h1><%= @record.title %> <small>$<%= @record.price %>.00</small></h1>
 <h2>Artist(s): <%= @record.artist %></h2>
 <h3>Genre: <%= @record.genre %></h3>
@@ -11,7 +15,8 @@
   <div class="reviews">
     <% @record.reviews.each do |review|  %>
       <div class="review">
-        <%= review.rating %> <%= review.content %> <%= review.user.username %> <%= link_to "Edit Review", edit_record_review_path(@record, review) if current_user && (current_user.username === review.user.username || current_user.admin) %>
+        <%= review.rating %> <%= review.content %> <%= review.user.username %>
+        <%= link_to "Edit Review", edit_record_review_path(@record, review) if current_user && (current_user.username === review.user.username || current_user.admin) %>
       </div>
     <% end %>
   </div>

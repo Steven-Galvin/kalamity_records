@@ -1,3 +1,7 @@
 <h1>Edit Review</h1>
 
 <%= render "form" %>
+
+<%= link_to "Delete Review", record_review_path(@record, @review),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %>
