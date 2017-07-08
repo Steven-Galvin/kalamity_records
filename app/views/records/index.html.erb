@@ -2,9 +2,10 @@
   <% @records.each do |record| %>
     <%= link_to record_path(record) do %>
       <div class="record">
-        <h4><%= record.title %> <small>$<%= record.price %>.00</small></h4>
+        <h4><%= record.title %></h4>
+        <small>$<%= record.price %>.00</small>
         <h5><%= record.artist %></h5>
-        <em><h6>Genre: <%= record.genre %></h6></em>
+        <em><h6><%= record.genre %></h6></em>
       </div>
     <% end %>
   <% end %>

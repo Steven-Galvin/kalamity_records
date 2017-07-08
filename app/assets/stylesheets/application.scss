@@ -30,6 +30,11 @@
 
  $bg-color: #f3dccc;
 
+ $record-color: #f3dccc;
+ $record-bg: #117f8e;
+ $record-border: #5F1A1A;
+ $record-accent: #aa9a8e;
+
  body {
    background-color: $bg-color;
  }
@@ -123,6 +128,10 @@
 .records {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  small {
+    color: $record-accent;
+  }
   a {
     color: $accent-color;
     text-decoration: none;
@@ -130,6 +139,14 @@
     margin: 10px;
   }
   .record {
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    padding: 7px;
+    color: $record-color;
+    background-color: $record-bg;
+    border: 1px solid $record-border;
+    border-radius: 5px;
   }
 }

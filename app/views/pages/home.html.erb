@@ -2,11 +2,11 @@
 
 <h4><%= "Kalamity Records is an online record store designed as a quick and easy way for visitors to checkout their favorite records. You can view all our records whether you have an account or not, but if you sign up you can leave reviews for others to see. The ability to shop is still under development, but check back soon and we'll have it up and running. If you don't have an account with us, sign up " if !current_user %><%= link_to "here", new_user_registration_path if !current_user %><%= " and get started." if !current_user %></h4>
 
-<h2>Feed</h2>
+<h2><%= "Feed" if current_user %></h2>
 <div class="home-records">
   <% @records.each do |record| %>
     <div class="home-record">
-      <%= record.title %>
+      <%= record.title if current_user%>
     </div>
   <% end %>
 </div>
