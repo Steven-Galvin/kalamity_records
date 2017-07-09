@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def home
-    @records = Record.all
+    @records = Record.most_reviewed
   end
 end

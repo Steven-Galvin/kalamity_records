@@ -35,6 +35,9 @@
  $record-border: #5F1A1A;
  $record-accent: #aa9a8e;
 
+ $edit-btn: #E67E32;
+ $delete-btn: #ef4343;
+
  body {
    background-color: $bg-color;
  }
@@ -45,6 +48,49 @@
 
  hr {
    border-color: $accent-color;
+ }
+
+ #home-title {
+   font-size: 30px;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+ }
+
+ .home-records {
+   margin-top: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0px 100px;
+   justify-content: center;
+   a {
+     flex-basis: 30%;
+     text-decoration: none;
+     transition: 0.2s ease-in-out;
+   }
+   .home-record {
+     transform: scale(0.9);
+     text-align: center;
+     color: $accent-color;
+     border: 5px double $accent-color;
+     border-radius: 25px;
+     box-shadow: 1px 1px 3px rgba($accent-color, 0.3);
+     height: 200px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 8px;
+     margin: 10px 10px;
+     transition: 0.2s ease-in-out;
+     &:hover {
+       transform: scale(1);
+       background-color: rgba($link-color, 0.01);
+       color: $link-color;
+       border-color: $link-color;
+       cursor: pointer;
+     }
+   }
  }
 
  .content {
@@ -148,5 +194,107 @@
     background-color: $record-bg;
     border: 1px solid $record-border;
     border-radius: 5px;
+  }
+}
+
+.button {
+  padding: 7px;
+  border: 2px solid $accent-color;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    border-color: $link-color;
+    a {
+      color: $link-color;
+    }
+  }
+  a {
+    color: $accent-color;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.delete-btn {
+  padding: 7px;
+  border: 2px solid $delete-btn;
+  background-color: rgba($delete-btn, 0.2);
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    border-color: $link-color;
+    a {
+      color: $link-color;
+    }
+  }
+  a {
+    color: $delete-btn;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.edit-btn {
+  padding: 7px;
+  border: 2px solid $edit-btn;
+  background-color: rgba($edit-btn, 0.2);
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background-color: rgba($link-color, 0.2);
+    cursor: pointer;
+    border-color: $link-color;
+    a {
+      color: $link-color;
+    }
+  }
+  a {
+    color: $edit-btn;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.edit-review {
+  transition: 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    a {
+      color: $link-color;
+    }
+  }
+  a {
+    color: $edit-btn;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+
+.review-title {
+  display: flex;
+  align-items: center;
+  .button {
+    margin-left: auto;
+  }
+}
+
+.reviews {
+  .rating {
+    color: $accent-color;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba($accent-color, 0.3);
+  }
+  .review {
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 1px solid blue;
   }
 }
