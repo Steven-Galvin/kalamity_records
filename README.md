@@ -19,7 +19,7 @@ User2:
   * email: user2@user2.com
   * password: asdfas
 
-## Landing Page:
+## Record Page:
 ![](./app/assets/images/screenshot.png "Kalamity Records")
 
 ## Planning
