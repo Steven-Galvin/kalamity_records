@@ -5,8 +5,22 @@
 
 This is a website for the fictional store Kalamity Records. I made this using Ruby on Rails with the help of devise for user authentication and authorization. It has two user accounts, basic and admin. Admin accounts can add records, update records, and delete records, as well as delete any reviews on those records. User accounts can add their own reviews to records, edit their reviews, and delete their reviews. All users will be able to view the stores collection of records. Testing will be covered with SimpleCov to make sure at least 80% of my sight has been succesfully tested.
 
+The website has three basic account already set up if installation instructions are followed accordingly.
+
+Admin Account:
+  * email: admin@admin.com
+  * password: asdfas
+
+User1:
+  * email: user1@user1.com
+  * password: asdfas
+
+User2:
+  * email: user2@user2.com
+  * password: asdfas
+
 ## Landing Page:
-![](./app/assets/images/placeholder.png "Kalamity Records")
+![](./app/assets/images/screenshot.png "Kalamity Records")
 
 ## Planning
 

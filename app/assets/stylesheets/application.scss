@@ -16,7 +16,7 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption|Raleway|Ubuntu');
+ @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption|Raleway|PT+Sans');
 
  $navbar-bg-color: #eda36d;
  $navbar-color-hvr: #0a0a0a;
@@ -38,8 +38,15 @@
  $edit-btn: #E67E32;
  $delete-btn: #ef4343;
 
+ $review-border: #5F1A1A;
+
  body {
    background-color: $bg-color;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ h1, h2, h3, {
+   font-family: 'PT Sans', sans-serif;
  }
 
  a {
@@ -194,6 +201,11 @@
     background-color: $record-bg;
     border: 1px solid $record-border;
     border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 1px 1px 3px rgba($accent-color, 0.7);
+    }
   }
 }
 
@@ -293,8 +305,11 @@
     text-shadow: 1px 1px 3px rgba($accent-color, 0.3);
   }
   .review {
+    background-color: rgba($review-border, 0.05);
     margin: 10px 0px 10px 0px;
     padding: 10px;
-    border: 1px solid blue;
+    border: 1px solid rgba($review-border, 0.5);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba($review-border, 0.3);
   }
 }
