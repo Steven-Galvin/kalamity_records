@@ -3,7 +3,7 @@
 ### Steven Galvin, July 7th, 2017
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=plastic)](https://github.com/steven-galvin/kalamity_records)
 
-This is a website for the fictional store Kalamity Records. I made this using Ruby on Rails with the help of devise for user authentication and authorization. It has two user accounts, basic and admin. Admin accounts can add records, update records, and delete records, as well as delete any reviews on those records. User accounts can add their own reviews to records, edit their reviews, and delete their reviews. All users will be able to view the stores collection of records. Testing will be covered with SimpleCov to make sure at least 80% of my sight has been succesfully tested.
+This is a website for the fictional store Kalamity Records. I made this using Ruby on Rails with the help of devise for user authentication and authorization. It has two user accounts, basic and admin. Admin accounts can add records, update records, and delete records, as well as delete any reviews on those records. User accounts can add their own reviews to records, edit their reviews, and delete their reviews. All users will be able to view the stores collection of records. Testing will be covered with SimpleCov to make sure at least 90% of my site has been succesfully tested.
 
 The website has three basic account already set up if installation instructions are followed accordingly.
 
