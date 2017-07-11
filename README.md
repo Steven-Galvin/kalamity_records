@@ -1,4 +1,4 @@
-# Flickr Clone
+# Kalamity Records
 ### Record store website for fictional business
 ### Steven Galvin, July 7th, 2017
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=plastic)](https://github.com/steven-galvin/kalamity_records)
