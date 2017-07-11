@@ -1,4 +1,15 @@
 class ReviewsController < ApplicationController
+  before_action do
+    flash[:notice] = "Please login first" unless current_user
+    redirect_to root_path unless current_user
+  end
+
+  before_action only: [:edit, :destroy] do
+    review = Review.find(params[:id])
+    flash[:notice] = "Unauthorised user" unless current_user.id === review.user.id || is_admin?
+    redirect_to record_path(review.record) unless current_user.id === review.user.id || is_admin?
+  end
+
   def new
     @record = Record.find(params[:record_id])
     @review = @record.reviews.new

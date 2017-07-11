@@ -14,26 +14,26 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-08T18:59:17-07:00">2017-07-08T18:59:17-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-11T14:14:27-07:00">2017-07-11T14:14:27-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.72%</span></span>
+    (<span class="covered_percent"><span class="green">96.93%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.32
+         1.54
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>36</b> files in total.
-    <b>335</b> relevant lines. 
-    <span class="green"><b>324</b> lines covered</span> and
+    <b>358</b> relevant lines. 
+    <span class="green"><b>347</b> lines covered</span> and
     <span class="red"><b>11</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -73,11 +73,11 @@
       <tr>
         <td class="strong"><a href="#ebee26e2dbd9c2fd94d7f781459df37cd3add15f" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>12</td>
-        <td>8</td>
-        <td>8</td>
+        <td>18</td>
+        <td>11</td>
+        <td>11</td>
         <td>0</td>
-        <td>5.1</td>
+        <td>7.2</td>
       </tr>
       
       <tr>
@@ -87,27 +87,27 @@
         <td>3</td>
         <td>3</td>
         <td>0</td>
-        <td>4.7</td>
+        <td>6.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#8a9fe1c3f00515015e48931bc5583f5362bbfe67" class="src_link" title="app/controllers/records_controller.rb">app/controllers/records_controller.rb</a></td>
-        <td class="yellow strong">80.65 %</td>
-        <td>53</td>
-        <td>31</td>
-        <td>25</td>
+        <td class="yellow strong">82.35 %</td>
+        <td>58</td>
+        <td>34</td>
+        <td>28</td>
         <td>6</td>
-        <td>1.7</td>
+        <td>2.3</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#9a390bde935cbcb89e611e0f4df6f3e83d21f96e" class="src_link" title="app/controllers/reviews_controller.rb">app/controllers/reviews_controller.rb</a></td>
-        <td class="yellow strong">83.33 %</td>
-        <td>47</td>
-        <td>30</td>
-        <td>25</td>
+        <td class="yellow strong">86.49 %</td>
+        <td>58</td>
+        <td>37</td>
+        <td>32</td>
         <td>5</td>
-        <td>1.5</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -157,7 +157,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>2.6</td>
+        <td>3.1</td>
       </tr>
       
       <tr>
@@ -333,9 +333,9 @@
       <tr>
         <td class="strong"><a href="#f4df79c0467a0c050e2c235d6760261a7f0ddd8e" class="src_link" title="spec/features/add_new_record_spec.rb">spec/features/add_new_record_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>28</td>
-        <td>23</td>
-        <td>23</td>
+        <td>34</td>
+        <td>29</td>
+        <td>29</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -353,9 +353,9 @@
       <tr>
         <td class="strong"><a href="#2564c84e65693acb16a594378cffbf6f673db10a" class="src_link" title="spec/features/edit_record_spec.rb">spec/features/edit_record_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>27</td>
-        <td>22</td>
-        <td>22</td>
+        <td>33</td>
+        <td>28</td>
+        <td>28</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -393,11 +393,11 @@
       <tr>
         <td class="strong"><a href="#eddd63f1550ea1eec151930389aa01984ad7226c" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
         <td>9</td>
-        <td>9</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
-        <td>1.8</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -517,8 +517,8 @@
     <h3>app/controllers/application_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -544,55 +544,91 @@
           <code class="ruby">  before_action :configure_permitted_parameters, if: :devise_controller?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  helper_method :is_admin?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">protected</code>
+          <code class="ruby">  def is_admin?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="24" data-linenumber="7">
+          <span class="hits">24</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    current_user &amp;&amp; current_user.admin</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def configure_permitted_parameters</code>
-        </li>
-      
-        <li class="covered" data-hits="12" data-linenumber="8">
-          <span class="hits">12</span>
-          
-          <code class="ruby">    added_attrs = [:avatar, :name, :sex, :dob, :admin, :username, :email, :password, :password_confirmation, :remember_me]</code>
-        </li>
-      
-        <li class="covered" data-hits="12" data-linenumber="9">
-          <span class="hits">12</span>
-          
-          <code class="ruby">    devise_parameter_sanitizer.permit :sign_up, keys: added_attrs</code>
-        </li>
-      
-        <li class="covered" data-hits="12" data-linenumber="10">
-          <span class="hits">12</span>
-          
-          <code class="ruby">    devise_parameter_sanitizer.permit :account_update, keys: added_attrs</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">protected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def configure_permitted_parameters</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="13">
+          <span class="hits">16</span>
+          
+          <code class="ruby">    added_attrs = [:avatar, :name, :sex, :dob, :admin, :username, :email, :password, :password_confirmation, :remember_me]</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="14">
+          <span class="hits">16</span>
+          
+          <code class="ruby">    devise_parameter_sanitizer.permit :sign_up, keys: added_attrs</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="15">
+          <span class="hits">16</span>
+          
+          <code class="ruby">    devise_parameter_sanitizer.permit :account_update, keys: added_attrs</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>
@@ -629,8 +665,8 @@
           <code class="ruby">  def home</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="3">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="16" data-linenumber="3">
+          <span class="hits">16</span>
           
           <code class="ruby">    @records = Record.most_reviewed</code>
         </li>
@@ -655,10 +691,10 @@
         <div class="source_table" id="8a9fe1c3f00515015e48931bc5583f5362bbfe67">
   <div class="header">
     <h3>app/controllers/records_controller.rb</h3>
-    <h4><span class="yellow">80.65 %</span> covered</h4>
+    <h4><span class="yellow">82.35 %</span> covered</h4>
     <div>
-      <b>31</b> relevant lines. 
-      <span class="green"><b>25</b> lines covered</span> and
+      <b>34</b> relevant lines. 
+      <span class="green"><b>28</b> lines covered</span> and
       <span class="red"><b>6</b> lines missed.</span>
     </div>
   </div>
@@ -675,356 +711,19 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  def index</code>
+          <code class="ruby">  before_action except: [:index, :show] do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="12" data-linenumber="3">
+          <span class="hits">12</span>
           
-          <code class="ruby">    @records = Record.all</code>
+          <code class="ruby">    flash[:notice] = &quot;Administrative credentials required&quot; unless is_admin?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="12" data-linenumber="4">
+          <span class="hits">12</span>
           
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def show</code>
-        </li>
-      
-        <li class="covered" data-hits="8" data-linenumber="7">
-          <span class="hits">8</span>
-          
-          <code class="ruby">    @record = Record.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def new</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="11">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    @record = Record.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def create</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="15">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    @record = Record.new(record_params)</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="16">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    if @record.save</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="17">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    flash[:notice] = &quot;Record successfully added!&quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="18">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      redirect_to  record_path(@record)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      render :new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def edit</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="25">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    @record = Record.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def update</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="29">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    @record = Record.find(params[:id])</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="30">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    if @record.update(record_params)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="31">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      flash[:notice] = &quot;Record successfully updated!&quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="32">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      redirect_to record_path(@record)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      render :edit</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="38">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def destroy</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="39">
-          
-          
-          <code class="ruby">    @record = Record.find(params[:id])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="40">
-          
-          
-          <code class="ruby">    @record.reviews.each do |review|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="41">
-          
-          
-          <code class="ruby">      review.destroy</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="43">
-          
-          
-          <code class="ruby">    if @record.destroy</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="44">
-          
-          
-          <code class="ruby">      flash[:notice] = &quot;Record successfully removed!&quot;</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="45">
-          
-          
-          <code class="ruby">      redirect_to records_path</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="46">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="47">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
-          
-          <code class="ruby">private</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="50">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def record_params</code>
-        </li>
-      
-        <li class="covered" data-hits="6" data-linenumber="51">
-          <span class="hits">6</span>
-          
-          <code class="ruby">    params.require(:record).permit(:title, :artist, :price, :description, :album_length, :genre)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="9a390bde935cbcb89e611e0f4df6f3e83d21f96e">
-  <div class="header">
-    <h3>app/controllers/reviews_controller.rb</h3>
-    <h4><span class="yellow">83.33 %</span> covered</h4>
-    <div>
-      <b>30</b> relevant lines. 
-      <span class="green"><b>25</b> lines covered</span> and
-      <span class="red"><b>5</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class ReviewsController &lt; ApplicationController</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def new</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="3">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    @record = Record.find(params[:record_id])</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="4">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    @review = @record.reviews.new</code>
+          <code class="ruby">    redirect_to root_path unless is_admin?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -1042,199 +741,199 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  def create</code>
+          <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="8">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
-          <code class="ruby">    @record = Record.find(params[:record_id])</code>
+          <code class="ruby">    @records = Record.all</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="9">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">    @review = @record.reviews.new(review_params)</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="10">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="10">
           
-          <code class="ruby">    if @review.save</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
-          <code class="ruby">    flash[:notice] = &quot;Review successfully added!&quot;</code>
+          <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="8" data-linenumber="12">
+          <span class="hits">8</span>
           
-          <code class="ruby">      redirect_to  record_path(@record)</code>
+          <code class="ruby">    @record = Record.find(params[:id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">    else</code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">      render :new</code>
+          <code class="ruby">  def new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="covered" data-hits="4" data-linenumber="16">
+          <span class="hits">4</span>
           
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    @record = Record.new</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def edit</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="19">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    @record = Record.find(params[:record_id])</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    @review = Review.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
-          <code class="ruby">  def update</code>
+          <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="24">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="20">
+          <span class="hits">4</span>
           
-          <code class="ruby">    @record = Record.find(params[:record_id])</code>
+          <code class="ruby">    @record = Record.new(record_params)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="25">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="21">
+          <span class="hits">4</span>
           
-          <code class="ruby">    @review= Review.find(params[:id])</code>
+          <code class="ruby">    if @record.save</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="26">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="22">
+          <span class="hits">3</span>
           
-          <code class="ruby">    if @review.update(review_params)</code>
+          <code class="ruby">    flash[:notice] = &quot;Record successfully added!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="23">
+          <span class="hits">3</span>
           
-          <code class="ruby">      flash[:notice] = &quot;Review successfully updated!&quot;</code>
+          <code class="ruby">      redirect_to  record_path(@record)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      redirect_to record_path(@record)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">      render :edit</code>
+          <code class="ruby">      render :new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
-          <code class="ruby">  def destroy</code>
+          <code class="ruby">  def edit</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="35">
+        <li class="covered" data-hits="2" data-linenumber="30">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">    @record = Record.find(params[:record_id])</code>
+          <code class="ruby">    @record = Record.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">    @review = Review.find(params[:id])</code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby">    if @review.destroy</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      flash[:notice] = &quot;Review successfully removed!&quot;</code>
+          <code class="ruby">  def update</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="39">
+        <li class="covered" data-hits="2" data-linenumber="34">
+          <span class="hits">2</span>
           
+          <code class="ruby">    @record = Record.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    if @record.update(record_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      flash[:notice] = &quot;Record successfully updated!&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
           
           <code class="ruby">      redirect_to record_path(@record)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      render :edit</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
@@ -1258,28 +957,461 @@
         <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
-          <code class="ruby">private</code>
+          <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="44">
           
-          <code class="ruby">  def review_params</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="45">
-          <span class="hits">5</span>
           
-          <code class="ruby">    params.require(:review).permit(:user_id, :content, :rating)</code>
+          <code class="ruby">    @record = Record.find(params[:id])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">    @record.reviews.each do |review|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
+          
+          <code class="ruby">      review.destroy</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
+          
+          <code class="ruby">    if @record.destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
+          
+          <code class="ruby">      flash[:notice] = &quot;Record successfully removed!&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="50">
+          
+          
+          <code class="ruby">      redirect_to records_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">private</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def record_params</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="56">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    params.require(:record).permit(:title, :artist, :price, :description, :album_length, :genre)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="9a390bde935cbcb89e611e0f4df6f3e83d21f96e">
+  <div class="header">
+    <h3>app/controllers/reviews_controller.rb</h3>
+    <h4><span class="yellow">86.49 %</span> covered</h4>
+    <div>
+      <b>37</b> relevant lines. 
+      <span class="green"><b>32</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ReviewsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action do</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="3">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    flash[:notice] = &quot;Please login first&quot; unless current_user</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="4">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    redirect_to root_path unless current_user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action only: [:edit, :destroy] do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    review = Review.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    flash[:notice] = &quot;Unauthorised user&quot; unless current_user.id === review.user.id || is_admin?</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    redirect_to record_path(review.record) unless current_user.id === review.user.id || is_admin?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="14">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @record = Record.find(params[:record_id])</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="15">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @review = @record.reviews.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="19">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @record = Record.find(params[:record_id])</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="20">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @review = @record.reviews.new(review_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="21">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    if @review.save</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="22">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    flash[:notice] = &quot;Review successfully added!&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="23">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      redirect_to  record_path(@record)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      render :new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="30">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @record = Record.find(params[:record_id])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="31">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @review = Review.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @record = Record.find(params[:record_id])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="36">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @review= Review.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="37">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    if @review.update(review_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      flash[:notice] = &quot;Review successfully updated!&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      redirect_to record_path(@record)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      render :edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
+          
+          <code class="ruby">    @record = Record.find(params[:record_id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="47">
+          
+          
+          <code class="ruby">    @review = Review.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
+          
+          <code class="ruby">    if @review.destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
+          
+          <code class="ruby">      flash[:notice] = &quot;Review successfully removed!&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="50">
+          
+          
+          <code class="ruby">      redirect_to record_path(@record)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">private</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def review_params</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="56">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    params.require(:review).permit(:user_id, :content, :rating)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby">end</code>
@@ -1518,8 +1650,8 @@
           <code class="ruby">    .order(&quot;reviews_count DESC&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="13">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="16" data-linenumber="13">
+          <span class="hits">16</span>
           
           <code class="ruby">    .limit(5)</code>
         </li>
@@ -1661,7 +1793,7 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :username, :name, :sex, :dob, :email, :password, :password_confirmation, presence: true</code>
+          <code class="ruby">  validates :username, :name, :sex, :dob, :email, presence: true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -4791,8 +4923,8 @@
     <h3>spec/features/add_new_record_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>23</b> relevant lines. 
-      <span class="green"><b>23</b> lines covered</span> and
+      <b>29</b> relevant lines. 
+      <span class="green"><b>29</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4911,7 +5043,7 @@
         <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_on &#39;Create Record&#39;</code>
+          <code class="ruby">    click_button &#39;Create Record&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="20">
@@ -4941,28 +5073,64 @@
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit new_record_path</code>
+          <code class="ruby">    user = FactoryGirl.create(:user, admin: true)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_on &#39;Create Record&#39;</code>
+          <code class="ruby">    visit root_path</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
+          <code class="ruby">    click_link &#39;Login&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; user.email</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; user.password</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit new_record_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Create Record&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
           <code class="ruby">    expect(page).to have_content &#39;errors&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">end</code>
@@ -5237,8 +5405,8 @@
     <h3>spec/features/edit_record_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>22</b> relevant lines. 
-      <span class="green"><b>22</b> lines covered</span> and
+      <b>28</b> relevant lines. 
+      <span class="green"><b>28</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5369,40 +5537,76 @@
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">    record = FactoryGirl.create(:record)</code>
+          <code class="ruby">    user = FactoryGirl.create(:user, admin: true)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit edit_record_path(record)</code>
+          <code class="ruby">    record = FactoryGirl.create(:record)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;Title&#39;, :with =&gt; &#39;&#39;</code>
+          <code class="ruby">    visit root_path</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_on &#39;Update Record&#39;</code>
+          <code class="ruby">    click_link &#39;Login&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; user.email</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; user.password</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit edit_record_path(record)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Title&#39;, :with =&gt; &#39;&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Update Record&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
           <code class="ruby">    expect(page).to have_content &#39;errors&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">end</code>
@@ -5835,8 +6039,8 @@
     <h3>spec/models/user_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5892,19 +6096,7 @@
           <code class="ruby">  it {should validate_presence_of :email}</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
-          
-          <code class="ruby">  it {should validate_presence_of :password}</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
-          
-          <code class="ruby">  it {should validate_presence_of :password_confirmation}</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>

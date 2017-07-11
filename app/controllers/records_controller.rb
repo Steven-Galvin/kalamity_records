@@ -1,4 +1,9 @@
 class RecordsController < ApplicationController
+  before_action except: [:index, :show] do
+    flash[:notice] = "Administrative credentials required" unless is_admin?
+    redirect_to root_path unless is_admin?
+  end
+
   def index
     @records = Record.all
   end
